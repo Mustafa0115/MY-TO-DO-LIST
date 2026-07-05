@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(213, 223, 219);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 0px 0px 2px;
+}
+p, ul {
+    font-size: 20px;
+    
+}
+input {
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 15px;
+    padding: 8px 8px;
+    border-width: 2px;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+button {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 8px;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: rgb(114, 114, 114);
+}
+button:hover {
+    background-color: rgb(87, 87, 87);
+    box-shadow: 0px 0px 10px;
+    transition: 1.5;
+}
+input:focus {
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0px 0px 2px;
+}
+.app {
+    background-color: rgb(222, 237, 238);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 8px 18px;
+    width: 600px;
+    border-radius: 14px;
+    border: 4px solid;
+    box-shadow: 0px 0px 12px;
+}
+.hero{
+    font-size: 23px;
+    text-align: center;
+    margin-left: 470px;
+}
