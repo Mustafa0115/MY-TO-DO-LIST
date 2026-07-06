@@ -1,66 +1,131 @@
 body {
-    background-color: rgb(213, 223, 219);
-    font-family: 'Times New Roman', Times, serif;
-    font-style: oblique;
+    background-color: #ffcdcd;
+    font-family:'Times New Roman', Times, serif;
     font-weight: bold;
-}
-h1 {
-    font-size: 45px;
-    text-align: center;
-    text-shadow: 0px 0px 2px;
-}
-p, ul {
-    font-size: 20px;
+    font-style: oblique;
     
 }
-input {
-    font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: oblique;
-    font-size: 15px;
-    padding: 8px 8px;
-    border-width: 2px;
-    border-radius: 10px;
-    margin-left: 8px;
-    margin-right: 4px;
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 25px;
+    text-shadow: 0px 0px 1px;
 }
-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+h2 {
+    font-size: 30px;
 }
-button {
-    color: rgb(255, 255, 255);
+p {
+    font-size: 20px;
+}
+#hero {
+    background-color: rgb(170, 93, 93);
+    padding-bottom: 27px;
+    padding-top: 5px;
+    padding-left: 19px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px;
+}
+#hero button {
+    padding: 3px 20px;
+    margin: 8px 8px;
+    font-size: large;
     font-weight: bold;
     font-style: oblique;
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(126, 62, 62);
+    color: white;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 8px;
+    box-shadow: none;
+}
+#button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button {
+    padding: 7px 11px;
+    margin: 8px 8px;
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(167, 167, 167);
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    border-color: black;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px;
+}
+img {
+    width: 200px;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px;
+}
+#hero2 {
+    display: flex;
+    gap: 80px;
+    transition: opacity 400ms ease, transform 400ms ease, max-height 400ms ease;
+    opacity: 0;
+    transform: translateY(-15px);
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    max-height: 1000px !important;
+    pointer-events: auto !important;
+}
+#imageSection , #imageSection2 , #imageSection3 {
+    background-color: rgb(170, 93, 93);
+    width: 205px;
     padding: 8px 8px;
-    border-width: 2px;
-    border-radius: 10px;
-    background-color: rgb(114, 114, 114);
+    margin-right: 25px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 8px;
+    margin-left: 80px;
+}
+#imageSection:hover , #imageSection2:hover , #imageSection3:hover {
+    background-color: rgb(143, 79, 79);
+    box-shadow: 0px 0px 8px;
+}
+#hero button:hover {
+    background-color: rgb(104, 51, 51);
+}
+#hero button:focus {
+    background-color: rgb(78, 38, 38);
+    transition: 2s;
 }
 button:hover {
-    background-color: rgb(87, 87, 87);
-    box-shadow: 0px 0px 10px;
-    transition: 1.5;
+    background-color: rgb(141, 141, 141);
+}
+button:focus {
+    background-color: rgb(119, 119, 119);
+    transition: 2s;
+}
+#hero:hover {
+    background-color: rgb(163, 91, 91);
+}
+input {
+    padding: 7px 11px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    border-radius: 12px;
+    background-color: rgb(173, 173, 173);
+    box-shadow: 0px 0px 8px;
+    border: 2px solid;
+    margin-top: 27px;
 }
 input:focus {
-    background-color: rgb(228, 228, 228);
-    box-shadow: 0px 0px 2px;
-}
-.app {
-    background-color: rgb(222, 237, 238);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    padding: 8px 18px;
-    width: 600px;
-    border-radius: 14px;
-    border: 4px solid;
-    box-shadow: 0px 0px 12px;
-}
-.hero{
-    font-size: 23px;
-    text-align: center;
-    margin-left: 470px;
+    background-color: rgb(165, 165, 165);
 }
